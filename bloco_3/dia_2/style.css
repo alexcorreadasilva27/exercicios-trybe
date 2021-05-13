@@ -1,0 +1,46 @@
+h1{
+         
+    color : orange; 
+    font-family: sans-serif;
+    text-align: center; 
+   }
+
+   p{
+       font-weight: 600;
+       font-size: 3em;
+   }
+
+   #what-is-yout-favorite-color{
+       background-color: black;
+   }
+
+  
+   .what-is-yout-favorite-color{
+       background-color: black;
+       text-align: center;
+   }
+   #Yellow{
+       color: yellow;
+       background-color: yellow;
+       font-style: italic;
+       
+   }
+   
+   
+   body{
+       background-color: rgb(0,0,0);
+       font-size: 16px;
+       text-align: center;
+   }
+
+   #Red{
+      
+       background-color: red;
+       line-height: 20px;
+   }
+
+   #Brown{
+       color: brown;
+       background-color: brown;
+       
+   }
