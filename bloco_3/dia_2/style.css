@@ -10,17 +10,17 @@ h1{
        font-size: 3em;
    }
 
-   #what-is-yout-favorite-color{
+   /*#what-is-yout-favorite-color{
        background-color: black;
-   }
+   }*/
 
   
    .what-is-yout-favorite-color{
-       background-color: black;
+       color: white;
        text-align: center;
    }
    #Yellow{
-       color: yellow;
+       
        background-color: yellow;
        font-style: italic;
        
@@ -40,7 +40,7 @@ h1{
    }
 
    #Brown{
-       color: brown;
+       
        background-color: brown;
        
    }
