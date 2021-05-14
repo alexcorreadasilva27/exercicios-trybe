@@ -1,0 +1,48 @@
+#Mario{
+    width: 200px;
+    position:absolute;
+    
+    
+}
+
+#goomba{
+    width: 150px;
+    position:absolute;
+    top: 400px;
+    left: 100px;
+}
+
+#baloon{
+    width: 350px;
+    top: 100px;
+    position: absolute;
+    right: 640px;
+    z-index: 1;
+}
+
+#bowser{
+    width: 400px;
+    position:absolute;
+    right: 250px;
+    top: 130px;
+    
+}
+
+.word{
+    position: absolute;
+    width: 500px;
+    font-size: 50px;
+    left: 350px;
+    z-index: 2;
+    top: 90px;
+}
+
+#borda{
+    background-color: black;
+   border-bottom: black;
+    position: absolute;
+}
+
+
+
+
