@@ -1,3 +1,8 @@
+h1{
+    text-align: center;
+
+}
+
 #Mario{
     width: 200px;
     position:absolute;
@@ -14,7 +19,7 @@
 
 #baloon{
     width: 350px;
-    top: 100px;
+    top: 60px;
     position: absolute;
     right: 640px;
     z-index: 1;
@@ -23,9 +28,17 @@
 #bowser{
     width: 400px;
     position:absolute;
-    right: 250px;
-    top: 130px;
+    right: 150px;
+    top: 100px;
+    border-width: 0px;
+    margin-bottom: 0px;
     
+            
+    
+}
+.bowser{
+    margin-bottom: 0px;
+    float: inline-end;
 }
 
 .word{
@@ -34,14 +47,15 @@
     font-size: 50px;
     left: 350px;
     z-index: 2;
-    top: 90px;
+    top: 40px;
+    
 }
 
-#borda{
+/*#borda{
     background-color: black;
    border-bottom: black;
     position: absolute;
-}
+}*/
 
 
 
