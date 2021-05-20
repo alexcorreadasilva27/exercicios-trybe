@@ -139,9 +139,9 @@ console.log(perimetro);*/
 
 // exercicio 6
 
-// let peca = 'Cavalo';
+// let peca = 'Cavaleiro';
 
-// switch(peca){
+// switch(peca.toLowerCase()){
 //     case  'peao' :
 //         console.log('reto ->',peca.toLowerCase());
 //         break;
@@ -157,8 +157,15 @@ console.log(perimetro);*/
 //         console.log('todas as direções uma vez só ->', peca.toLowerCase());
 //         break;
 //     case 'cavalo' :
-//         peca.toLowerCase();
+        
 //         console.log('Em L ->', peca);
 //         break;
+//     case 'torre' :
+//         console.log('horizontal e vertical ->',peca);
+//         break;
+//     default:
+//         console.log('Peça inválida');
+//         break;
+
 // }
 
