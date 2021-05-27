@@ -1,6 +1,6 @@
 let emergencyTasks = document.getElementsByClassName("emergency-tasks")[0];
 emergencyTasks.style.background = "pink";
-emergencyTasks.style.color = "white"
+emergencyTasks.style.color = "white";
 
 let emergencyTask = document.querySelector("h3");
 emergencyTask.style.background = "purple";
