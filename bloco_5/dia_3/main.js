@@ -69,7 +69,7 @@ divUm.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro do addEventListener. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'divUm'.
-divUm.addEventListener('mouseover', (evento) => {
+divUm.addEventListener('mouserover', (evento) => {
     evento.target.style.color = 'red';
 });
 divUm.addEventListener('mouseout', (evento) => {
@@ -79,9 +79,11 @@ divUm.addEventListener('mouseout', (evento) => {
 divDois.addEventListener('dblclick', resetText);
 
 divDois.addEventListener('mouseover', (evento) => {
-    evento.target.style.color = 'red';
+    evento.target.style.color = 'black';
+    evento.target.style.background = 'red';
 });
 divDois.addEventListener('mouseout', (evento) => {
+    evento.target.style.background = '#006dfb';
     evento.target.style.color = 'unset';
 });
 
