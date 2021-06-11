@@ -18,7 +18,7 @@
         <fieldset>
           <div class="line-content">
             <label for="full-name">Nome Completo: </label>
-            <input type="text" name="name" id="full-name" maxlength="40" required>
+            <input type="text" name="Nome" id="full-name" maxlength="40" required>
           </div>
           <div class="line-content">
               <label for="email">Email: </label>
@@ -45,15 +45,35 @@
         <div class="line-content">
             <legend>Tipo de Imóvel</legend>
             <label for="casa">Casa</label>
-            <input type="radio" name="Tipo-de-Imóvel" id="casa" required value="casa">
+            <input type="radio" name="tipoDeImovel" id="casa" required value="casa">
             <label for="Apartamento">Apartamento</label>
-            <input type="radio" name="Tipo-de-Imóvel" id="Apartamento" required value="apartamento">
+            <input type="radio" name="tipoDeImovel" id="Apartamento" required value="apartamento">
         </div>  
         </fieldset>
-        
+        <fieldset>
+            <div class="line-content">
+                <label for="resumo">Resumo do Curriculo: </label>
+                <textarea name="Resumo" id="resumo" maxlength="1000" cols="100" rows="20" required></textarea>
+            </div>
+            <div class="line-content">
+                <label for="cargo">Cargo</label>
+                <input type="text" name="Cargo" id="cargo" maxlength="40" required>
+            </div>
+            <div class="line-content">
+                <label for="descricao-cargo">Descrição do Cargo: </label>
+                <input type="text" name="descricaoCargo" id="descricao-cargo" maxlength="500" required>
+            </div>
+            <div class="line-content">
+                <label for="data-de-inicio">Data de Inicio: </label>
+                <input type="text" class="input-data" name="dataInicio" id="data-de-inicio" value="" required>
+            </div>
+        </fieldset>
+        <button class="submit-button" type="submit">Enviar</button>
+        <button class="clear-button" type="button">Limpar</button>
       </div>
         </form>
 </main>
+<section class="form-data"></section>
 <script src="script.js"></script>
 </body>
 </html>
