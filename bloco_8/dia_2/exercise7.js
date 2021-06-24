@@ -63,10 +63,16 @@ const books = [
   },
 ];
 
-// function authorBornIn1947()  { return books.find((borns) => borns.author.birthYear === 1947).author.name};
-//   
-  const authorBornIn1947 = () => books.find((borns) => borns.author.birthYear === 1947).author.name 
-  
-  console.log(authorBornIn1947());
+const expectedResult = false;
 
-    assert.strictEqual(authorBornIn1947(), 'Stephen King');
+const authorUnique = () => books.every((book) => !books.some((bookSome)=> (bookSome.author.birthYear === book.author.birthYear) && (bookSome.author.name !== book.author.name)));
+console.log(authorUnique());
+
+assert.strictEqual(authorUnique(), expectedResult);
+
+// function authorUnique() {
+//     return books.every((book) =>
+//       !books.some((bookSome) =>
+//         (bookSome.author.birthYear === book.author.birthYear)
+//         && (bookSome.author.name !== book.author.name)));
+//   }
