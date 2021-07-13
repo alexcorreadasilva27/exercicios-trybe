@@ -22,4 +22,4 @@ const greetingMessage = (user) => {
   
   const { userName, password } = user;
   
-  module.exports = { greetingMessage, loginErrorMessage, verifyCredentials }
+  module.exports = { greetingMessage, loginErrorMessage, verifyCredentials, user }

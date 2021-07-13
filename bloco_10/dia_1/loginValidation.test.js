@@ -3,12 +3,13 @@ const {
     greetingMessage,
     loginErrorMessage,
     verifyCredentials,
+    user
   } = require("./loginValidation.js");
   
   describe("a função verifyCredentials()", () => {
     
     it("verifyCredentials() calls the correct function depending on the user and password input", () => {
-      expect(verifyCredentials({ userName: 'Joana', password: 123456 })).toBe(
+      expect(verifyCredentials( user )).toBe(
         "Hello, Joana! Que bom ter você de volta"
       ); 
     });
