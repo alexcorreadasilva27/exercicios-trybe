@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './pokemon.css'
 
 class Pokemon extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class Pokemon extends React.Component {
     // no caso, utilizamos um <p>.
 
     return (
-      <div className="pokemon card">
+      <div className="pokemon">
         <div>
           <p>{ name }</p>
           <p>{ type }</p>

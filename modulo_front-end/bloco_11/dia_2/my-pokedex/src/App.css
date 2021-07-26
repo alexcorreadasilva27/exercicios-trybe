@@ -1,8 +1,12 @@
 .App {
   text-align: center;
+  background-color: red;
+  border-radius: 40%;
+  height: 600px;
 }
 
 .App-logo {
+  margin: 0;
   border-radius: 8%;
   height: 40vmin;
   pointer-events: none;
