@@ -27,13 +27,13 @@ app.get('/authors/:id', async (req, res) => {
 });
 
 app.post('/authors', async (req, res) => {
-  const { first_name, middle_name, last_name } = req.body;
+  const { firstName, middleName, lastName } = req.body;
 
-  if (!Author.isValid(first_name, middle_name, last_name)) {
+  if (!Author.isValid(firstName, middleName, lastName)) {
       return res.status(400).json({ message: 'Dados inválidos' });
   }
 
-  await Author.create(first_name, middle_name, last_name);
+  await Author.create(firstName, middleName, lastName);
 
   res.status(201).json({ message: 'Autor criado com sucesso! '});
 });
