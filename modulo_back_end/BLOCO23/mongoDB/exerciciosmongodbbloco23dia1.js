@@ -1,0 +1,57 @@
+// 1
+use ("sample");
+db.bios.find({ _id: 8 });
+
+// 2
+use ("sample");
+db.bios.find({ _id: 8 }, { name: 1 });
+
+// 3
+use ("sample");
+db.bios.find({ _id: 8 }, { name: 1, birth: 1, _id: 0});
+
+//4
+use ("sample");
+db.bios.find({"name.first": "John"});
+
+//5
+use ("sample");
+db.bios.find().limit(3);
+
+//6
+use("sample");
+db.bios.find().skip(5).limit(2);
+
+//7
+use ("class")
+db.books.count();
+
+//8
+use ("class");
+db.books.count({
+  "status": "PUBLISH"
+});
+
+//9
+use ("class");
+  db.books.find(
+    {},
+    {
+      _id: 0,
+      title: 1,
+      isbn: 1,
+      pageCount: 1
+    }
+).limit(3);
+
+//10
+use ("class");
+db.books.find({
+  status: "MEAP"
+},
+{
+  title: 1,
+  authors: 1,
+  status: 1
+}
+).skip(5).limit(10)
