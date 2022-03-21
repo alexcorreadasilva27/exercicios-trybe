@@ -1,0 +1,81 @@
+// Operadores de comparação MongoDB
+// 1
+use ("business");
+db.restaurants.find({ borough: { $in: ["Queens", "Staten Island", "Bronx"]}}).count();
+
+// 2
+use ("business");
+db.restaurants.find({ cuisine: { $ne: "American"}}).count();
+
+// 3
+use ("business");
+db.restaurants.find({ rating: { $gte: 8}}).count();
+
+// 4
+use ("business");
+db.restaurants.find({ rating: { $lt: 4}}).count();
+
+// 5
+use ("business");
+db.restaurants.find({ rating: { $nin: [5, 6, 7]}}).count();
+////////////////////////////////////////////////
+
+// Operadores Lógicos
+
+// 1
+use ("business");
+db.restaurants.find({ rating: { $not: { $lte: 5}}}).count();
+
+// 2
+use ("business");
+db.restaurants.find({ $or: [{ rating: {$gte: 6}}, { borough: "Brooklyn"}]}).count();
+
+// 3
+use ("business");
+db.restaurants.find({
+  $and: [
+    { borough: { $in: [ "Queens", "Staten Island", "Broklyn" ]}},
+    { rating: { $gt: 4}},
+  ],
+}).count();
+
+// 4
+use ("business");
+db.restaurants.find({ $nor: [{ rating: {$eq: 1}},{cuisine: "American"}]}).count();
+
+// 5
+use ("business");
+db.restaurants.find({
+  $and: [
+      { $or: [{ rating: { $gt:6, $lt: 10}}]},
+      { $or: [{ borough: 'Brooklyn' }, { cuisine: { $ne: 'Delicatessen'}}]},
+  ],
+}).count();
+////////////////////////////////////////////////
+
+// Método Sort
+
+// 1
+use ("business");
+db.restaurants.find().sort({ "name": 1 });
+
+// 2
+use ("business");
+db.restaurants.find().sort({ "rating": -1 });
+////////////////////////////////////////////////
+
+// Removendo documentos
+
+// 1
+use ("business");
+db.restaurants.deleteOne({ cuisine: "Ice Cream, Gelato, Yogurt, Ices"});
+
+//2 
+use ("business");
+db.restaurants.deleteMany({ cuisine: "American"});
+////////////////////////////////////////////////
+
+
+
+
+  

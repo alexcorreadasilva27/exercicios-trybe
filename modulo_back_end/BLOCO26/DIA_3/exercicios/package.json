@@ -1,0 +1,16 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "Exercicios bloco 26 dia 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests "
+  },
+  "author": "AlexC",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "sinon": "^12.0.1"
+  }
+}
