@@ -74,8 +74,9 @@ def test_retrieve_pokemons_by_type1():
         "sp_def": 64,
         "speed": 43,
     }
-    pokemon_json_content = json.dumps({"results": [
-      grass_type_pokemon, water_type_pokemon]})
+    pokemon_json_content = json.dumps(
+        {"results": [grass_type_pokemon, water_type_pokemon]}
+    )
     # substituímos a função padrão do python open por mock_open
     # uma versão que se comporta de forma parecida, porém simulada
     with patch("builtins.open", mock_open(read_data=pokemon_json_content)):
