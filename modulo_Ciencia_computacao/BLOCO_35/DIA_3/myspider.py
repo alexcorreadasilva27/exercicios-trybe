@@ -1,4 +1,6 @@
 import scrapy
+
+
 class BlogSpider(scrapy.Spider):
     name = 'blogspider'
     start_urls = ['https://www.zyte.com/blog/']
