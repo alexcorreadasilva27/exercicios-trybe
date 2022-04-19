@@ -1,0 +1,7 @@
+{
+  "python.testing.pytestArgs": [
+    "Algoritmos_de_busca"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}
